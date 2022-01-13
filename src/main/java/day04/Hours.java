@@ -14,12 +14,11 @@ public class Hours {
         return new ArrayList<>(dataBlockList);
     }
 
-    public void getBlocksFromFileHours(Path path)  {
+    public void getBlocksFromFile(Path path)  {
         try (Scanner scanner = new Scanner(path)) {
             while (scanner.hasNextLine()) {
                 dataBlockList.add(new DataBlock(scanner.nextLine(),scanner.nextLine(),scanner.nextLine(),Integer.parseInt(scanner.nextLine())));
             }
-
         } catch (IOException | NumberFormatException e) {
             throw new IllegalStateException("Error while reading file!", e);
         }
@@ -36,7 +35,7 @@ public class Hours {
 }
 
 // bufferreader
-//beolvasás külön private metódusba
+
 // service osztálynév: az üzleti logika itt megy
 // controller osztályok: a megjelenésért felelnek - frontenddel való kkommunikációért
 // https://www.youtube.com/watch?v=bBC-nXj3Ng4&t=1310s blockchain technológia

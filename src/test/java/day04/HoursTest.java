@@ -12,7 +12,7 @@ class HoursTest {
     void testGetHours() {
         Path path = Path.of("src/main/resources/beosztas.txt");
         Hours hours = new Hours();
-        hours.getBlocksFromFileHours(path);
+        hours.getBlocksFromFile(path);
 
         System.out.println(hours.getHoursFromBlocks("Oposszum Opika"));
         System.out.println(hours.getHoursFromBlocks("Emu Emil"));
