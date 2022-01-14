@@ -33,9 +33,3 @@ public class Hours {
         return sum;
     }
 }
-
-// bufferreader
-
-// service osztálynév: az üzleti logika itt megy
-// controller osztályok: a megjelenésért felelnek - frontenddel való kkommunikációért
-// https://www.youtube.com/watch?v=bBC-nXj3Ng4&t=1310s blockchain technológia
